@@ -1,0 +1,15 @@
+{
+  "name": "curso_profesional_javascript",
+  "version": "1.0.0",
+  "description": "Este es el proyecto del curso profesional de javascript",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "author": "SGG10",
+  "license": "ISC",
+  "devDependencies": {
+    "live-serve": "0.0.0",
+    "live-server": "^1.2.1"
+  }
+}
