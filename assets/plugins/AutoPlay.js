@@ -1,7 +1,7 @@
 class AutoPlay{
-    run(palyer){
-        palyer.mute()
-        palyer.play()
+    run(player){
+        if(!player.muted) player.muted = true
+        player.play()
     }
 }
 export default AutoPlay

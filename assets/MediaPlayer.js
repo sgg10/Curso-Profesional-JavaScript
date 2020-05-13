@@ -23,8 +23,20 @@ class MediaPlayer{
     toggleMute = () => this.media.muted ? this.unmute() : this.mute()
 
     _initPlugins = () => {
+        const player = {
+            media: this.media,
+            play: () => this.play(),
+            pause: () => this.pause(),
+            mute: () => this.mute(),
+            get muted(){
+                return this.media.muted
+            },
+            set muted(value){
+                this.media.muted = value
+            }
+        }
         this.plugins.forEach(plugin => {
-            plugin.run(this)
+            plugin.run(player)
         });
     }
 }
