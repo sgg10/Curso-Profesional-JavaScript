@@ -17,4 +17,4 @@ let counter = makeCounter(7);
 console.log(counter.count) //Intentando acceder al atributo
 console.log(counter.getCount())
 counter.incrase()
-console.log(counter.getCount())
+console.log(counter.getCount()) 

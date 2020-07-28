@@ -1,0 +1,13 @@
+{
+  "name": "@sgg10/platzimediaplayer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/MediaPlayer.js",
+  "scripts": {
+    "build" : "build src/**/*.js src/plugins/*.js src/plugins/**/*.js --outDir lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

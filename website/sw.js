@@ -27,7 +27,7 @@ async function precache(){
         '/assets/MediaPlayer.js',
         '/assets/plugins/AutoPlay.js',
         '/assets/plugins/AutoPause.js',
-        '/assets/BigBuckBunny.mp4'
+        '/assets/BigBuckBunny.mp4',
     ])
 }
 

@@ -11,5 +11,8 @@
   "devDependencies": {
     "live-serve": "0.0.0",
     "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "@sgg10/platzimediaplayer": "^1.0.0"
   }
 }

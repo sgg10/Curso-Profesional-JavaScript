@@ -12,7 +12,15 @@ class MediaPlayer{
     constructor(config){
         this.media = config.video
         this.plugins = config.plugins || []
+        this._initPlayer()
         this._initPlugins()
+    }
+
+    _initPlayer(){
+        this.container = document.createElement('div')
+        this.container.style.position = 'relative'
+        this.media.parentNode.insertBefore(this.container, this.media)
+        this.container.appendChild(this.media)
     }
 
     play = () => this.media.play()
@@ -25,6 +33,7 @@ class MediaPlayer{
     _initPlugins = () => {
         const player = {
             media: this.media,
+            container: this.container,
             play: () => this.play(),
             pause: () => this.pause(),
             mute: () => this.mute(),

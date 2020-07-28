@@ -1,12 +1,13 @@
-import MediaPlayer from './MediaPlayer.js';
-import AutoPlay from './plugins/AutoPlay.js'
-import AutoPause from './plugins/AutoPause.js'
+import MediaPlayer from '../../mediaplayer/lib/MediaPlayer,js';
+import AutoPlay from '../../mediaplayer/lib/plugins/AutoPlay'
+import AutoPause from '../../mediaplayer/lib/plugins/AutoPause'
+import Ads from '../../mediaplayer/lib/plugins/Ads.js'
 
 const video = document.querySelector("video")
 const play = document.querySelector('#play')
 const mute = document.querySelector('#mute')
 
-const player = new MediaPlayer({video: video, plugins:[new AutoPlay(), new AutoPause()]})
+const player = new MediaPlayer({video: video, plugins:[new AutoPlay(), new AutoPause(), new Ads()]})
 
 play.onclick = () => player.togglePlay()
 mute.onclick = () => player.toggleMute()
